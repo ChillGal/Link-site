@@ -1,0 +1,84 @@
+body {
+  background-color: pink;
+}
+.container {
+  height: 200px;
+  position: relative;
+  text-align: center;
+}
+.page video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top: 0;
+  left: 0;
+}
+.heading {
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #f27185;
+  font-size: 80px;
+  font-family: "Gluten", cursive, fantasy, monospace;
+  font-weight: bold;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  left: -215px;
+  top: -37px;
+}
+.subheading {
+  position: relative;
+  top: 95px;
+  color: #f27185;
+  font-size: 20px;
+  font-family: cursive, fantasy, monospace;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 48%;
+  top: 150px;
+}
+.links .twitter:hover, .twitch:hover, .steam:hover, .github:hover, .trans:hover, .blog:hover, .grafana:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+.discord {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
+.discord:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1);
+}
+.discordtag {
+  display: none;
+  text-align: center;
+  font-size: 50px;
+  margin: 0;
+  width: 220px;
+  height: 75px;
+  line-height: 75px;
+  font-family: "Open Sans";
+  background-color: #7289DA;
+  border-radius: 7px;
+}
+.discordtag p {
+  transform: translateY(-50px);
+}
+.discord:hover .discordtag {
+  display: inline;
+  transition: width .5s ease-out;
+
+}
